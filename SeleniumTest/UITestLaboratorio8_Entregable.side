@@ -1,0 +1,176 @@
+{
+  "id": "065106ca-b2da-4038-840b-229de41de080",
+  "version": "2.0",
+  "name": "UITestLaboratorio8",
+  "url": "https://localhost:44331",
+  "tests": [{
+    "id": "79e36044-4855-473b-aafb-777f4e34834e",
+    "name": "PrimeraUno",
+    "commands": [{
+      "id": "6ad8f1e3-1af4-40b8-bdf0-895c0e433c31",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1fb097b1-a454-4262-99f2-3fba9b57fc19",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b3356b3-f695-4822-804c-bf40cdba33d5",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=building Web apps with ASP.NET Core",
+      "targets": [
+        ["linkText=building Web apps with ASP.NET Core", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'building Web apps with ASP.NET Core')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://docs.microsoft.com/aspnet/core')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'building Web apps with ASP.NET Core')]", "xpath:innerText"]
+      ],
+      "value": "building Web apps with ASP.NET Core"
+    }, {
+      "id": "5fd05760-cf75-4189-9992-4587d4d39c79",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.container:nth-child(1)",
+      "targets": [
+        ["css=.container:nth-child(1)", "css:finder"],
+        ["xpath=//footer/div", "xpath:position"],
+        ["xpath=//div[contains(.,'© 2022 - Laboratorio5 - Privacy')]", "xpath:innerText"]
+      ],
+      "value": "© 2022 - Laboratorio5 - Privacy"
+    }, {
+      "id": "5c99c97a-1c9e-445b-9136-6903b8c22afe",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Paises",
+      "targets": [
+        ["linkText=Paises", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Paises')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Paises')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Paises')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c7140f2-7cde-4f1c-a705-82d7bd97e56f",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Paises - Laboratorio5",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9f324c90-3d23-4078-a9d9-4fc2be0c1c4a",
+    "name": "PrimeraDos",
+    "commands": [{
+      "id": "d246f9d7-65f2-4af4-85b9-3342f0b8fa06",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15304812-3fd1-4812-87b8-736c34929e16",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d74f9f4-d3ac-4f1a-ad62-d9c23391d847",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Privacy",
+      "targets": [
+        ["linkText=Privacy", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Privacy')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Home/Privacy')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Privacy')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d166e0ea-061b-40aa-916d-468ff94fdf96",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p",
+      "targets": [
+        ["css=p", "css:finder"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": "Use this page to detail your site's privacy policy."
+    }, {
+      "id": "4d8e092c-d348-4a0c-be0d-1e80eff0f870",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Privacy Policy - Laboratorio5",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "13b2f384-e723-4af6-909d-dc69fce0c07e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Paises",
+      "targets": [
+        ["linkText=Paises", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Paises')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Paises')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Paises')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "110633c0-6f4d-4834-ab16-76725f37a025",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Paises - Laboratorio5",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4eef8f9b-d93b-45bd-a493-7663736abb05",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Crear país",
+      "targets": [
+        ["linkText=Crear país", "linkText"],
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear país')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Paises/CrearPais')]", "xpath:href"],
+        ["xpath=//main/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Crear país')]", "xpath:innerText"]
+      ],
+      "value": "Crear país"
+    }, {
+      "id": "b455e34e-47e9-4e0c-9957-c1e80c0c16a4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(1) > td:nth-child(3)", "css:finder"],
+        ["xpath=//td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'Español')]", "xpath:innerText"]
+      ],
+      "value": "Español"
+    }]
+  }],
+  "suites": [{
+    "id": "2d809925-7237-4721-b315-82925138485a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["79e36044-4855-473b-aafb-777f4e34834e"]
+  }],
+  "urls": ["https://localhost:44331/"],
+  "plugins": []
+}

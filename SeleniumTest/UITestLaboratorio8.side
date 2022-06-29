@@ -1,0 +1,81 @@
+{
+  "id": "065106ca-b2da-4038-840b-229de41de080",
+  "version": "2.0",
+  "name": "UITestLaboratorio8",
+  "url": "https://localhost:44331",
+  "tests": [{
+    "id": "79e36044-4855-473b-aafb-777f4e34834e",
+    "name": "PrimeraUno",
+    "commands": [{
+      "id": "6ad8f1e3-1af4-40b8-bdf0-895c0e433c31",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1fb097b1-a454-4262-99f2-3fba9b57fc19",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b3356b3-f695-4822-804c-bf40cdba33d5",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=building Web apps with ASP.NET Core",
+      "targets": [
+        ["linkText=building Web apps with ASP.NET Core", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'building Web apps with ASP.NET Core')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://docs.microsoft.com/aspnet/core')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'building Web apps with ASP.NET Core')]", "xpath:innerText"]
+      ],
+      "value": "building Web apps with ASP.NET Core"
+    }, {
+      "id": "5fd05760-cf75-4189-9992-4587d4d39c79",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.container:nth-child(1)",
+      "targets": [
+        ["css=.container:nth-child(1)", "css:finder"],
+        ["xpath=//footer/div", "xpath:position"],
+        ["xpath=//div[contains(.,'© 2022 - Laboratorio5 - Privacy')]", "xpath:innerText"]
+      ],
+      "value": "© 2022 - Laboratorio5 - Privacy"
+    }, {
+      "id": "5c99c97a-1c9e-445b-9136-6903b8c22afe",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Paises",
+      "targets": [
+        ["linkText=Paises", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Paises')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Paises')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Paises')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c7140f2-7cde-4f1c-a705-82d7bd97e56f",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Paises - Laboratorio5",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2d809925-7237-4721-b315-82925138485a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["79e36044-4855-473b-aafb-777f4e34834e"]
+  }],
+  "urls": ["https://localhost:44331/"],
+  "plugins": []
+}

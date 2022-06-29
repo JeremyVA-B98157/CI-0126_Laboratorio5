@@ -14,7 +14,7 @@ namespace Laboratorio5.Models
         public string Continente { get; set; }
         [Required(ErrorMessage = "Debe ingresar el idioma")]
         [DisplayName("Idioma:")]
-        [RegularExpression("^[a-zA-Z]+$", ErrorMessage = "No puede ingresar números")]
+        [RegularExpression("^[a-zA-ZÀ-ÿ\u00f1\u00d1]+$", ErrorMessage = "No puede ingresar números")]
         public string Idioma { get; set; }
 
     }
